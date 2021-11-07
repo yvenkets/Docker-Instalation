@@ -14,3 +14,6 @@ sudo apt update
 sudo apt install docker-ce
  sudo systemctl enable docker.service
  sudo systemctl enable containerd.service
+sudo apt install docker-compose
+docker-compose --version
+
