@@ -1,0 +1,39 @@
+1.IF we want to create the image of our running container do the following command.
+
+docker commit container_name to imagename
+docker commit web3000 gitportfolio 
+
+2.you can also create the mage from docker file
+docker build the image -t image name where the docker file is or docker file path
+
+docker build -t dryrun .
+
+
+3.How to create the Docker file
+ touch Dockerfile
+ edit that
+ 
+ FROM ubuntu
+ 
+
+4.If we want to push the image to docker hub
+
+first tag that
+
+docker tag image name(we wanto to push already in the local machine)  docker hub account name /new imagename
+
+docker tag gitportfolio 589589/gitpf3kp
+
+then login to hub
+
+login to docker hub in your host machine termi
+
+docker login
+
+and enter your docker hub credentials
+
+finally push to hub
+docker push hubid/taggedimage name
+docker push 589589/gitpf3kp
+
+
